@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="détail">
+    <div>
+      <img src="./images/9161d4e2-db39-4bca-8d02-d58abe6cfc18 (1).jpg" />
+</div>
+<div>
+      <h1>
+        <span> Jordan 1 Zoom Air Comfort</span><br />
+        Light Silver and True Red
+      </h1>
+      <p>
+        Making iconic style even more comfortable. The Air Jordan 1 Zoom Cmft
+        remakes the 1st Air Jordan with lightweight, low-profile cushioning and
+        elements that improve wearability. Leathers and textiles in the upper
+        have a broken-in feel. A lined, padded collar cups the heel for a secure
+        fit.
+        <span> SKU: CT0978-100</span>
+      </p>
+      <p>Colors :</p>
+      <div class="sercl">
+      <div class="secr" style="background-color:#989AA1;"></div>&nbsp &nbsp
+      <div class="secr" style="background-color:black;border: 1px solid white;"></div>&nbsp &nbsp
+      <div class="secr" style="background-color:red;"></div>
+      </div>
+     <p> Size :36/ 37/ 38/ 39/ 40/ 42</p>
+     <p>Price:
+      190$</p>
+      Quantity:  
+      <input type="button" onclick="decrementValue()" value="-" class="button_increment" id="dec" style="width: 36px;width: 40px;height: 36px;border-radius:200px;background: #FFFFFF;margin-left:5%;border: 1px solid #000000;box-sizing: border-box;"/>
+      <input type="text" name="quantity" id="quantity" value="1" size="1" class="thequantity" style="width: 110px;margin-left:5%;height: 36px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 8px;" />
+      <input type="button" onclick="incrementValue()" value="+" class="button_increment" style="width: 40px;height: 36px;margin-left:5%;border-radius:200px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;">
+        <script>
+                            function incrementValue() {
+                                var value = parseInt(document.getElementById('quantity').value);
+                                value = isNaN(value) ? 0 : value;
+                                if (value < 100) {
+                                    value++;
+                                    document.getElementById('quantity').value = value;
+                                  
+                                }
+                            }
+                            incrementValue();
+    
+                            function decrementValue() {
+                                var value = parseInt(document.getElementById('quantity').value);
+                                value = isNaN(value) ? 0 : value;
+                                if (value < 100) {
+                                    value--;
+                                    document.getElementById('quantity').value = value;
+                                   
+                                }
+                            }
+                            decrementValue();
+                        </script>
+    </div>
+  </body>
+</html>
